@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
 
-const TodoList = ({ todos, onTodoClick }) = (
+const TodoList = ({ todos, onTodoClick }) => (
   <ul>
     {todos.map(todo => (
       <Todo
@@ -18,9 +18,9 @@ TodoList.propTypes = {
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       completed: PropTypes.bool.isRequired,
-      tezt: PropTypes.string.isRequired
+      text: PropTypes.string.isRequired
     }).isRequired
-  ).isRequired
+  ).isRequired,
   onTodoClick: PropTypes.func.isRequired
 }
 

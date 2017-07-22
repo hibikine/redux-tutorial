@@ -1,5 +1,5 @@
 import React from 'react';
-import ProyTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Router, Route, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import App from './App';
@@ -12,7 +12,7 @@ const Root = ({ store }) => (
   </Provider>
 );
 
-Root propTypes = {
+Root.propTypes = {
   store: PropTypes.object.isRequired
 };
 
